@@ -1,11 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Página inicial</Text>
-      <StatusBar style="auto" />
+      <View style={styles.card}>
+        <Image
+          source={{ uri: 'https://i.imgur.com/0y8Ftya.png' }} // coloque sua foto aqui
+          style={styles.avatar}
+        />
+
+        <Text style={styles.title}>Olá! Eu sou [Seu Nome]</Text>
+        <Text style={styles.subtitle}>Estudante • Desenvolvedor • Criativo</Text>
+
+        <Text style={styles.description}>
+          Sou um estudante apaixonado por tecnologia, inovação e criação de projetos. 
+          Gosto de aprender coisas novas e transformar ideias em realidade usando design 
+          e programação. Este site faz parte de um projeto escolar e representa um pouco 
+          do que eu sei fazer.
+        </Text>
+      </View>
+
+      <StatusBar style="light" />
     </View>
   );
 }
@@ -13,8 +29,53 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'rgb(249, 250, 255)', // azul escuro elegante
     alignItems: 'center',
     justifyContent: 'center',
+    padding: 20,
+  },
+
+  card: {
+    backgroundColor: ' #1E293B',
+    width: '100%',
+    borderRadius: 20,
+    padding: 25,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: ' #334155',
+    shadowColor: '#000',
+    shadowOpacity: 0.3,
+    shadowRadius: 10,
+  },
+
+  avatar: {
+    width: 120,
+    height: 120,
+    borderRadius: 100,
+    marginBottom: 20,
+    borderWidth: 3,
+    borderColor: '#3B82F6',
+  },
+
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#F8FAFC',
+    marginBottom: 5,
+    textAlign: 'center',
+  },
+
+  subtitle: {
+    fontSize: 16,
+    color: '#94A3B8',
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+
+  description: {
+    fontSize: 15,
+    color: '#CBD5E1',
+    lineHeight: 22,
+    textAlign: 'center',
   },
 });

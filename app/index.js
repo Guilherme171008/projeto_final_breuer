@@ -67,7 +67,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#0c0101ff', // fundo escuro profundo
+    backgroundColor: 'rgb(242, 244, 248)', // fundo escuro profundo
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 25,
@@ -77,13 +77,14 @@ const styles = StyleSheet.create({
   card: {
     width: '90%',
     padding: 25,
-    backgroundColor: '#211818ff', // leve contraste com o fundo
+    backgroundColor:  '#1E293B', // leve contraste com o fundo
     borderRadius: 15,
     borderWidth: 2,
-    borderColor: '#706967ff',
+    borderColor: ' #334155',
     shadowOffset: { width: 0, height: 6 },
     shadowOpacity: 0.4,
     shadowRadius: 10,
+    shadowColor: '#000',
     elevation: 10, // para Android
     alignItems: 'center',
   },
@@ -91,7 +92,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 32,
     fontWeight: '800',
-    color: '#ff3603ff', // vermelho vibrante
+    color: 'rgb(242, 237, 235)', // vermelho vibrante
     textAlign: 'center',
     marginBottom: 10,
     letterSpacing: 1.2,
@@ -99,7 +100,7 @@ const styles = StyleSheet.create({
 
   subtitle: {
     fontSize: 18,
-    color: '#ffffffaa', // branco suave
+    color: '#94A3B8', // branco suave
     textAlign: 'center',
     marginBottom: 20,
   },
@@ -107,7 +108,7 @@ const styles = StyleSheet.create({
   callToAction: {
     fontSize: 19,
     fontWeight: '700',
-    color: '#e4d905ff', // amarelo elegante
+    color: '#94A3B8', // amarelo elegante
     letterSpacing: 0.8,
   },
 
@@ -116,6 +117,6 @@ const styles = StyleSheet.create({
     bottom: 0,
     height: 5,
     width: '100%',
-    backgroundColor: '#e9db12ff', // detalhe que dá suspense
+    backgroundColor: '#94A3B8', // detalhe que dá suspense
   },
 });
