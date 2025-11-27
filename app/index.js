@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
     backgroundColor:  '#1E293B', // leve contraste com o fundo
     borderRadius: 15,
     borderWidth: 2,
-    borderColor: ' #334155',
+    borderColor: '#334155',
     shadowOffset: { width: 0, height: 6 },
     shadowOpacity: 0.4,
     shadowRadius: 10,

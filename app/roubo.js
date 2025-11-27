@@ -37,14 +37,11 @@ export default function HistoryPage() {
         <Text style={styles.paragraph}>
           Vestindo um jaleco branco — idêntico ao dos trabalhadores do museu — Peruggia retirou a Mona Lisa
           da parede, desmontou a pesada moldura de vidro e madeira e escondeu o quadro debaixo do jaleco.
-          Na época, o Louvre não possuía detectores, câmeras ou guardas armados. Era praticamente possível
-          andar livremente pelo prédio. Essa facilidade foi crucial para o êxito do crime.
         </Text>
 
         <Text style={styles.paragraph}>
-          O que muitos não sabem é que o quadro ficou escondido por **mais de 24 horas dentro do próprio
-          museu**, pois Peruggia ficou trancado sem conseguir sair. Apenas no dia seguinte ele teve a
-          oportunidade de escapar discretamente pela porta dos fundos.
+          O quadro ficou escondido por **mais de 24 horas dentro do próprio museu**, pois Peruggia ficou
+          trancado sem conseguir sair. Apenas no dia seguinte ele conseguiu escapar pela porta dos fundos.
         </Text>
 
         <Text style={styles.subtitle}>A investigação</Text>
@@ -52,45 +49,31 @@ export default function HistoryPage() {
         <Text style={styles.paragraph}>
           A polícia francesa iniciou uma das maiores investigações da história cultural. Artistas famosos,
           como **Pablo Picasso** e o poeta **Guillaume Apollinaire**, chegaram a ser interrogados como
-          suspeitos. O caso ganhou contornos ainda mais cinematográficos quando jornais franceses e
-          internacionais começaram a divulgar teorias e rumores, acusando desde ladrões profissionais até
-          colecionadores milionários.
+          suspeitos. O caso ganhou contornos cinematográficos quando jornais começaram a divulgar rumores.
         </Text>
 
         <Text style={styles.paragraph}>
-          O Louvre ficou fechado por uma semana inteira — algo nunca visto. Quando reabriu, milhares de
-          pessoas passaram a visitar o espaço onde antes estava o quadro, como se fosse uma atração por si só.
+          Quando o Louvre reabriu, milhares de pessoas visitaram o local apenas para ver o espaço vazio.
         </Text>
 
         <Text style={styles.subtitle}>A descoberta e o retorno</Text>
 
         <Text style={styles.paragraph}>
-          A Mona Lisa só reapareceu dois anos depois, quando Peruggia tentou vender a obra para um antiquário
-          italiano em Florença. Ele acreditava estar fazendo um ato patriótico, devolvendo a arte “roubada”
-          da Itália por Napoleão — o que era, historicamente, falso, já que Leonardo da Vinci
-          levou a pintura para a França voluntariamente.
+          A obra só reapareceu dois anos depois, quando Peruggia tentou vendê-la a um antiquário em Florença.
         </Text>
 
         <Text style={styles.paragraph}>
-          Ao ser detido, Peruggia afirmou que sua intenção não era lucro, mas “devolver a obra ao seu
-          verdadeiro lar”. Sua defesa convenceu parte da opinião pública italiana, que o tratou quase
-          como um herói. Ele cumpriu apenas alguns meses de prisão.
+          Ele acreditava estar “devolvendo” a arte à Itália — o que era falso historicamente.
         </Text>
 
         <Text style={styles.subtitle}>Consequências</Text>
 
         <Text style={styles.paragraph}>
-          O roubo levou a uma revolução na segurança dos museus. Portas, vitrines, alarmes e sistemas de
-          vigilância passaram a ser obrigatórios para obras de grande valor. A atenção internacional gerada
-          pelo crime fez a Mona Lisa se tornar um símbolo global, transformando-a no quadro mais famoso do
-          planeta.
+          O roubo revolucionou a segurança dos museus e transformou a Mona Lisa no quadro mais famoso do mundo.
         </Text>
 
         <Text style={styles.paragraph}>
-          Após seu retorno ao Louvre, a pintura passou a ser tratada como um tesouro nacional francês.
-          Hoje, a Mona Lisa é protegida por vidro à prova de balas, sensores de movimento e um sistema
-          de segurança sofisticado. O episódio se tornou um marco na história da arte, revelando como um
-          único acontecimento pode transformar completamente a percepção pública de uma obra.
+          Hoje, a pintura é protegida por vidro à prova de balas e sensores modernos.
         </Text>
 
         <Text style={styles.callToAction}>
@@ -98,6 +81,7 @@ export default function HistoryPage() {
         </Text>
 
       </ScrollView>
+
       <StatusBar style="dark" />
     </View>
   );
@@ -111,10 +95,10 @@ const styles = StyleSheet.create({
   },
 
   scrollContent: {
-    backgroundColor: ' #1E293B',
+    backgroundColor: '#1E293B',
     borderRadius: 15,
     borderWidth: 2,
-    borderColor: ' #334155',
+    borderColor: '#334155',
     padding: 25,
     shadowColor: '#100f0fff',
     shadowOffset: { width: 0, height: 6 },
@@ -149,7 +133,7 @@ const styles = StyleSheet.create({
   callToAction: {
     fontSize: 18,
     fontWeight: '700',
-    color: '',
+    color: '#94A3B8',
     textAlign: 'center',
     marginTop: 20,
   },

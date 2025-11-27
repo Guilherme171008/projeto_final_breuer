@@ -6,7 +6,7 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.card}>
         <Image
-          source={{ uri: 'https://i.imgur.com/0y8Ftya.png' }} // coloque sua foto aqui
+          source={{ uri: 'https://i.imgur.com/0y8Ftya.png' }}
           style={styles.avatar}
         />
 
@@ -29,20 +29,20 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'rgb(249, 250, 255)', // azul escuro elegante
+    backgroundColor: 'rgb(249, 250, 255)',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
   },
 
   card: {
-    backgroundColor: ' #1E293B',
+    backgroundColor: '#1E293B',
     width: '100%',
     borderRadius: 20,
     padding: 25,
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: ' #334155',
+    borderColor: '#334155',
     shadowColor: '#000',
     shadowOpacity: 0.3,
     shadowRadius: 10,
