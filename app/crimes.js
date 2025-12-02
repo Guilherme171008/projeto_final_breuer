@@ -1,6 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, Animated, Easing, ScrollView } from 'react-native';
-import { useEffect, useRef } from 'react';
+import { StyleSheet, Text, View, Image, Animated, Easing, ScrollView} from 'react-native';
+import { useEffect, useRef } from 'react'; 
+import isabella from "../assets/isabella.jpg";
+import roubo1 from "../assets/roubo1.jpg";
+import roubo2 from "../assets/roubo2.jpg";
+import roubo3 from "../assets/roubo3.jpg";
+import museu2 from "../assets/museu2.jpg";
+import roubo4 from "../assets/roubo4.jpg";
+import roubo5 from "../assets/roubo5.jpg";
+import roubo6 from "../assets/roubo6.jpg";
+import museu3 from "../assets/museu3.jpg";
+import roubo7 from "../assets/roubo7.jpg";
+import roubo8 from "../assets/roubo8.jpg";
+import roubo9 from "../assets/roubo9.jpg";
+
+
 
 export default function App() {
   const fadeAnim = useRef(new Animated.Value(0)).current;
@@ -42,10 +56,9 @@ export default function App() {
         {/* ===================================================== */}
 
         <Image
-          source={{ uri: "https://i.imgur.com/k6RK9tL.jpeg" }}
+          source={isabella}
           style={styles.mainImage}
         />
-
         <Text style={styles.museumName}>Isabella Stewart Gardner Museum – EUA (1990)</Text>
 
         <Text style={styles.description}>
@@ -66,12 +79,12 @@ export default function App() {
         <Text style={styles.source}>
           Fonte: FBI, Isabella Gardner Museum
         </Text>
-
+      
         {/* MINI-GALERIA */}
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.galleryScroll}>
-          <Image source={{ uri: "https://i.imgur.com/6kC2Vmw.jpeg" }} style={styles.galleryImage} />
-          <Image source={{ uri: "https://i.imgur.com/qzqkQV3.jpeg" }} style={styles.galleryImage} />
-          <Image source={{ uri: "https://i.imgur.com/LTe3bOa.jpeg" }} style={styles.galleryImage} />
+          <Image source={roubo1} style={styles.galleryImage} />
+           <Image source={roubo2} style={styles.galleryImage} />
+        <Image source={roubo3} style={styles.galleryImage} />
         </ScrollView>
 
         {/* ===================================================== */}
@@ -79,7 +92,7 @@ export default function App() {
         {/* ===================================================== */}
 
         <Image
-          source={{ uri: "https://i.imgur.com/tnz7RZ1.jpeg" }}
+          source={museu2}
           style={styles.mainImage}
         />
 
@@ -106,17 +119,16 @@ export default function App() {
 
         {/* MINI-GALERIA */}
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.galleryScroll}>
-          <Image source={{ uri: "https://i.imgur.com/C26NdDB.jpeg" }} style={styles.galleryImage} />
-          <Image source={{ uri: "https://i.imgur.com/a8Nh3vX.jpeg" }} style={styles.galleryImage} />
-          <Image source={{ uri: "https://i.imgur.com/h8mR2Ua.jpeg" }} style={styles.galleryImage} />
+           <Image source={roubo4} style={styles.galleryImage} />
+                   <Image source={roubo5} style={styles.galleryImage} />
+                     <Image source={roubo6} style={styles.galleryImage} />
         </ScrollView>
 
         {/* ===================================================== */}
-        {/* ==================== CASO 3 ========================= */}
-        {/* ===================================================== */}
+        {/* ==================== CASO 3 ========================= */} {/* ===================================================== */}
 
         <Image
-          source={{ uri: "https://i.imgur.com/RXTU4Lb.jpeg" }}
+          source={museu3}
           style={styles.mainImage}
         />
 
@@ -131,8 +143,8 @@ export default function App() {
 
         <Text style={styles.workTitle}>Principais Itens Roubados:</Text>
         <Text style={styles.list}>
-          • Miniaturas iranianas do século XVIII{"\n"}
-          • Pinturas clássicas russas{"\n"}
+          • Miniaturas iranianas do século XVIII{"\n"} 
+          • Pinturas clássicas russas{"\n"} 
           • Antiguidades caucasianas
         </Text>
 
@@ -143,9 +155,9 @@ export default function App() {
 
         {/* MINI-GALERIA */}
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.galleryScroll}>
-          <Image source={{ uri: "https://i.imgur.com/0V5Nukr.jpeg" }} style={styles.galleryImage} />
-          <Image source={{ uri: "https://i.imgur.com/PsPp50e.jpeg" }} style={styles.galleryImage} />
-          <Image source={{ uri: "https://i.imgur.com/8Cd0JHt.jpeg" }} style={styles.galleryImage} />
+          <Image source={roubo7} style={styles.galleryImage} />
+        <Image source={roubo8} style={styles.galleryImage} />
+         <Image source={roubo9} style={styles.galleryImage} />
         </ScrollView>
 
       </Animated.View>

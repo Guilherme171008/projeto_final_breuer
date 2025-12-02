@@ -1,7 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, Animated, Easing, ScrollView } from 'react-native';
 import { useEffect, useRef } from 'react';
-
+import museu4 from "../assets/museu4.jpg";
+import meninas from "../assets/meninas.jpg";
+import bosque from "../assets/bosque.jpg";
+import meninas2 from "../assets/meninas2.jpg";
+import museu5 from "../assets/museu5.jpg";
+import pedra from "../assets/pedra.jpg";
+import pedras2 from "../assets/pedras2.jpg";
+import pedras3 from "../assets/pedras3.jpg";
+import museu6 from "../assets/museu6.jpg";
+import navio from "../assets/navio.jpg";
+import navio2 from "../assets/navio2.jpg";
+import navio3 from "../assets/navio3.jpg";
 export default function App() {
   const fadeAnim = useRef(new Animated.Value(0)).current;
   const slideAnim = useRef(new Animated.Value(40)).current;
@@ -39,9 +50,9 @@ export default function App() {
         </View>
 
         {/* ===================== MUSEU 1 ===================== */}
-        <Image
-          source={{ uri: "https://i.imgur.com/k6RK9tL.jpeg" }}
-          style={styles.avatar}
+     <Image
+               source={museu4}
+               style={styles.mainImage}
         />
 
         <Text style={styles.museumName}>Museu do Prado – Espanha</Text>
@@ -63,17 +74,16 @@ export default function App() {
         {/* GALERIA PRADO */}
         <Text style={styles.galleryTitle}>Galeria</Text>
         <ScrollView horizontal style={styles.gallery}>
-          <Image source={{ uri: "https://i.imgur.com/N2c2TgH.jpeg" }} style={styles.galleryImg} />
-          <Image source={{ uri: "https://i.imgur.com/J6jzx2D.jpeg" }} style={styles.galleryImg} />
-          <Image source={{ uri: "https://i.imgur.com/2Lx0h1T.jpeg" }} style={styles.galleryImg} />
+         <Image source={meninas} style={styles.galleryImg} />
+                  <Image source={bosque} style={styles.galleryImg} />
+                           <Image source={meninas2} style={styles.galleryImg} />
         </ScrollView>
 
         {/* ===================== MUSEU 2 ===================== */}
 
         <Image
-          source={{ uri: "https://i.imgur.com/tnz7RZ1.jpeg" }}
-          style={styles.avatar}
-        />
+          source={museu5}
+          style={styles.avatar} />
 
         <Text style={styles.museumName}>British Museum – Reino Unido</Text>
 
@@ -94,15 +104,16 @@ export default function App() {
         {/* GALERIA BRITISH */}
         <Text style={styles.galleryTitle}>Galeria</Text>
         <ScrollView horizontal style={styles.gallery}>
-          <Image source={{ uri: "https://i.imgur.com/8o3EPhL.jpeg" }} style={styles.galleryImg} />
-          <Image source={{ uri: "https://i.imgur.com/7VH3Gei.jpeg" }} style={styles.galleryImg} />
-          <Image source={{ uri: "https://i.imgur.com/tW9Cs9i.jpeg" }} style={styles.galleryImg} />
+          <Image source={pedra} style={styles.galleryImg} />
+      <Image source={pedras2} style={styles.galleryImg} />
+      <Image source={pedras3} style={styles.galleryImg} />
+     
         </ScrollView>
 
         {/* ===================== MUSEU 3 ===================== */}
 
         <Image
-          source={{ uri: "https://i.imgur.com/RXTU4Lb.jpeg" }}
+          source={museu6}
           style={styles.avatar}
         />
 
@@ -124,9 +135,9 @@ export default function App() {
         {/* GALERIA MET */}
         <Text style={styles.galleryTitle}>Galeria</Text>
         <ScrollView horizontal style={styles.gallery}>
-          <Image source={{ uri: "https://i.imgur.com/1KnzrMa.jpeg" }} style={styles.galleryImg} />
-          <Image source={{ uri: "https://i.imgur.com/vDAeWcM.jpeg" }} style={styles.galleryImg} />
-          <Image source={{ uri: "https://i.imgur.com/rt6GEHc.jpeg" }} style={styles.galleryImg} />
+          <Image source={navio} style={styles.galleryImg} />
+          <Image source={navio2} style={styles.galleryImg} />
+          <Image source={navio3} style={styles.galleryImg} />
         </ScrollView>
 
       </Animated.View>

@@ -6,7 +6,7 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.card}>
         <Image
-          source={{ uri: 'https://i.imgur.com/0y8Ftya.png' }}
+          source={}
           style={styles.avatar}
         />
 
