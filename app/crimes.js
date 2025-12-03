@@ -46,15 +46,12 @@ export default function App() {
         ]}
       >
 
-        {/* ======================= TÍTULO ======================= */}
+        
         <View style={styles.titleBackground}>
           <Text style={styles.title}>Furtos Históricos em Museus</Text>
         </View>
 
-        {/* ===================================================== */}
-        {/* ==================== CASO 1 ========================= */}
-        {/* ===================================================== */}
-
+      
         <Image
           source={isabella}
           style={styles.mainImage}
@@ -87,9 +84,7 @@ export default function App() {
         <Image source={roubo3} style={styles.galleryImage} />
         </ScrollView>
 
-        {/* ===================================================== */}
-        {/* ==================== CASO 2 ========================= */}
-        {/* ===================================================== */}
+        
 
         <Image
           source={museu2}
