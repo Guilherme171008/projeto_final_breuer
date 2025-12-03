@@ -1,22 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
-
+import breuer from "../assets/breuer.jpg";
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.card}>
         <Image
-          source={}
+          source={breuer}
           style={styles.avatar}
         />
 
-        <Text style={styles.title}>Olá! Eu sou [Seu Nome]</Text>
+        <Text style={styles.title}>Olá! Eu sou Guilherme Breuer </Text>
         <Text style={styles.subtitle}>Estudante • Desenvolvedor • Criativo</Text>
 
         <Text style={styles.description}>
-          Sou um estudante apaixonado por tecnologia, inovação e criação de projetos. 
-          Gosto de aprender coisas novas e transformar ideias em realidade usando design 
-          e programação. Este site faz parte de um projeto escolar e representa um pouco 
+     Este site faz parte de um projeto escolar e representa um pouco 
           do que eu sei fazer.
         </Text>
       </View>

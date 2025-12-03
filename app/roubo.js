@@ -1,84 +1,91 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ScrollView} from 'react-native';
-
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 
 export default function HistoryPage() {
   return (
     <View style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
 
-        <Text style={styles.title}>O Roubo do Museu do Louvre</Text>
+        <Text style={styles.title}>O Roubo das Joias de Napoleão em 2025</Text>
 
-        <Text style={styles.subtitle}>Um crime histórico</Text>
+        <Text style={styles.subtitle}>Um crime histórico na era moderna</Text>
 
         <Text style={styles.paragraph}>
-          Em 1911, o mundo da arte foi abalado por um dos crimes mais notórios da história:
-          o desaparecimento da pintura “Mona Lisa”, de Leonardo da Vinci, do Museu do Louvre, em Paris.
-          Naquela época, a obra já era admirada, mas não tinha a fama estratosférica que possui hoje.
-          O roubo chocou a população, virou manchete em jornais ao redor do mundo e marcou o início do
-          que seria um fenômeno midiático sem precedentes.
+          Em abril de 2025, o Museu do Louvre enfrentou um dos maiores escândalos de sua história recente:
+          o roubo das lendárias Joias de Napoleão Bonaparte, um conjunto de coroas, anéis, insígnias e artefatos
+          que faziam parte do acervo imperial francês. Avaliadas em bilhões de euros e consideradas tesouros
+          nacionais, as joias desapareceram em uma operação criminosa extremamente sofisticada.
         </Text>
 
         <Text style={styles.paragraph}>
-          A busca pela pintura mobilizou autoridades francesas, críticos de arte, intelectuais e até
-          curiosos. Pessoas faziam filas apenas para observar o espaço vazio na parede do museu,
-          onde antes estava o famoso retrato. O crime, inesperado e audacioso, transformou a Mona Lisa
-          em uma celebridade mundial.
+          O roubo chocou o mundo inteiro e reacendeu o debate sobre a segurança de patrimônios históricos.
+          Em poucas horas, o caso viralizou nas redes sociais, se tornando o evento cultural mais comentado
+          do ano.
         </Text>
 
-        <Text style={styles.subtitle}>Como aconteceu</Text>
+        <Text style={styles.subtitle}>Como o roubo aconteceu</Text>
 
         <Text style={styles.paragraph}>
-          O ladrão, Vincenzo Peruggia, era um ex-funcionário do museu. Ele conhecia bem a rotina do Louvre:
-          os horários dos seguranças, as áreas menos vigiadas e os acessos internos. Na madrugada do dia
-          21 de agosto de 1911, aproveitando-se de sua antiga credencial e de falhas gravíssimas na
-          segurança, ele entrou no museu com um plano simples, mas ousado.
-        </Text>
-
-        <Text style={styles.paragraph}>
-          Vestindo um jaleco branco — idêntico ao dos trabalhadores do museu — Peruggia retirou a Mona Lisa
-          da parede, desmontou a pesada moldura de vidro e madeira e escondeu o quadro debaixo do jaleco.
+          A polícia francesa revelou que o grupo responsável era composto por quatro indivíduos altamente
+          treinados, liderados por uma criminosa conhecida apenas como **"A Viúva Negra"**, especialista em
+          furtos de arte e tecnologia de invasão. O plano foi preparado ao longo de dois anos.
         </Text>
 
         <Text style={styles.paragraph}>
-          O quadro ficou escondido por **mais de 24 horas dentro do próprio museu**, pois Peruggia ficou
-          trancado sem conseguir sair. Apenas no dia seguinte ele conseguiu escapar pela porta dos fundos.
+          Na noite de 12 de abril, a quadrilha executou o ataque utilizando drones modificados, sensores
+          falsificados e um sistema de interferência capaz de desativar temporariamente a rede elétrica
+          interna do setor onde as joias estavam expostas. A operação levou menos de 7 minutos.
+        </Text>
+
+        <Text style={styles.paragraph}>
+          Os ladrões utilizaram um equipamento de corte a laser de alta precisão para abrir a cápsula
+          blindada onde as joias estavam. Em seguida, fugiram por um corredor de manutenção raramente
+          utilizado, escapando pelas margens do Rio Sena com a ajuda de motos aquáticas.
         </Text>
 
         <Text style={styles.subtitle}>A investigação</Text>
 
         <Text style={styles.paragraph}>
-          A polícia francesa iniciou uma das maiores investigações da história cultural. Artistas famosos,
-          como **Pablo Picasso** e o poeta **Guillaume Apollinaire**, chegaram a ser interrogados como
-          suspeitos. O caso ganhou contornos cinematográficos quando jornais começaram a divulgar rumores.
+          A investigação rapidamente tornou-se internacional. A Interpol, Europol e agências de segurança
+          de diversos países formaram uma força-tarefa para identificar padrões e rastrear o caminho das
+          joias roubadas. Especialistas em arte afirmam que o objetivo do grupo não era vender as peças,
+          mas entregá-las a um colecionador privado extremamente rico.
         </Text>
 
         <Text style={styles.paragraph}>
-          Quando o Louvre reabriu, milhares de pessoas visitaram o local apenas para ver o espaço vazio.
+          Entre os detalhes curiosos revelados pela investigação estava o uso de microchips
+          criptografados escondidos nas roupas da equipe criminosa, projetados para bloquear qualquer
+          tentativa de rastreamento térmico ou por radiofrequência.
         </Text>
 
-        <Text style={styles.subtitle}>A descoberta e o retorno</Text>
+        <Text style={styles.subtitle}>A descoberta e o resgate</Text>
 
         <Text style={styles.paragraph}>
-          A obra só reapareceu dois anos depois, quando Peruggia tentou vendê-la a um antiquário em Florença.
+          As joias só foram encontradas cinco meses depois, em setembro de 2025, durante uma operação
+          secreta na fronteira entre Suíça e Áustria. A Viúva Negra foi presa tentando transportar as joias
+          desmontadas dentro de um compartimento oculto no teto de um veículo de luxo.
         </Text>
 
         <Text style={styles.paragraph}>
-          Ele acreditava estar “devolvendo” a arte à Itália — o que era falso historicamente.
+          Felizmente, todas as peças foram recuperadas e retornaram ao Louvre após passar por uma avaliação
+          completa para garantir sua integridade. A segurança das galerias históricas foi totalmente
+          reformulada, incluindo scanners biométricos e vitrines com travamento inteligente.
         </Text>
 
         <Text style={styles.subtitle}>Consequências</Text>
 
         <Text style={styles.paragraph}>
-          O roubo revolucionou a segurança dos museus e transformou a Mona Lisa no quadro mais famoso do mundo.
+          O caso gerou mudanças profundas em museus de todo o mundo. O uso de inteligência artificial para
+          monitoramento, drones de vigilância interna e protocolos digitais avançados tornaram-se padrão.
         </Text>
 
         <Text style={styles.paragraph}>
-          Hoje, a pintura é protegida por vidro à prova de balas e sensores modernos.
+          As Joias de Napoleão, agora mais famosas do que nunca, atraem milhares de visitantes todos os dias,
+          que desejam ver de perto os tesouros que quase desapareceram para sempre.
         </Text>
 
         <Text style={styles.callToAction}>
-          Explore mais curiosidades e detalhes sobre este roubo histórico.
+          Explore mais curiosidades sobre este roubo que marcou 2025.
         </Text>
 
       </ScrollView>
